@@ -47,6 +47,14 @@ const App = () => {
               <Navbar />
             </div>
           </div>
+
+          <div>
+            <Routes>
+              <Route path='/'  element='Ecommerce'/>
+              <Route path='/ecommerce'  element='Ecommerce'/>
+
+            </Routes>
+          </div>
         </div>
       </BrowserRouter>
     </div>
