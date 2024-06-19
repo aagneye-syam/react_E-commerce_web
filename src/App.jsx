@@ -50,9 +50,12 @@ const App = () => {
 
           <div>
             <Routes>
-              <Route path='/'  element='Ecommerce'/>
-              <Route path='/ecommerce'  element='Ecommerce'/>
+              <Route path="/" element="Ecommerce" />
+              <Route path="/ecommerce" element="Ecommerce" />
 
+              <Route path="/orders" element="Orders" />
+              <Route path="/employees" element="Employees" />
+              <Route path="/customers" element="Customers" />
             </Routes>
           </div>
         </div>
