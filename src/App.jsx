@@ -5,11 +5,8 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import { useStateContext } from "./contexts/ContextProvider";
 
-import { Navbar, Sidebar } from "./components";
-
 import { Navbar, Sidebar } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
-import './App.css';
 
 import "./App.css";
 
