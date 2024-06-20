@@ -37,7 +37,11 @@ const Sidebar = () => {
               <button
                 type="button"
                 onClick={() => setActiveMenu(!activeMenu)}
-                style={{ color: currentColor }}
+                style={{
+                  color: currentColor,
+                  fontSize: "1.55rem",
+                  display: "inline-block",
+                }} // Added styles
                 className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
               >
                 <MdOutlineCancel />
@@ -47,7 +51,7 @@ const Sidebar = () => {
           <div className="mt-10">
             {links.map((item) => (
               <div key={item.title}>
-                 <p className="text-gray-400 dark:text-gray-400 m-3 mt-4 uppercase">
+                <p className="text-gray-400 dark:text-gray-400 m-3 mt-4 uppercase">
                   {item.title}
                 </p>
                 {item.links.map((link) => (
@@ -56,9 +60,11 @@ const Sidebar = () => {
                     key={link.name}
                     onClick={handleCloseSideBar}
                     style={({ isActive }) => ({
-                      backgroundColor: isActive ? currentColor : '',
+                      backgroundColor: isActive ? currentColor : "",
                     })}
-                    className={({ isActive }) => (isActive ? activeLink : normalLink)}
+                    className={({ isActive }) =>
+                      isActive ? activeLink : normalLink
+                    }
                   >
                     {link.icon}
                     <span className="capitalize ">{link.name}</span>
