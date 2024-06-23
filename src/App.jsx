@@ -3,14 +3,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
-
+import { useStateContext } from "./contexts/ContextProvider";
 import { Navbar, Sidebar } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 
 import "./App.css";
 
 const App = () => {
-  const  activeMenu  = true
+
+  const {activeMenu } = useStateContext();
 
   return (
     <div>
